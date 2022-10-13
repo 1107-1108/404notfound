@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+        function detectBrowser() {
+            var browser = navigator.appName
+            var b_version = navigator.appVersion
+            var version = parseFloat(b_version)
+            if ((browser == "Netscape" || browser == "Microsoft Internet Explorer")
+                && (version >= 4)) {
+                alert('宁浏览器没什么问题');
+            }
+            else { alert("宁的浏览器太旧了！升级一下罢！") }
+        }
+        function changeColor(){ 
+	        var color="#66CCFF|#04a8fa";
+	        color=color.split("|"); 
+ 	        var xuan = document.getElementsByTagName("div");
+ 
+	        for(var i=0;i<xuan.length;i++){
+	        xuan[i].style.color=color[parseInt(Math.random() * color.length)]; 
+ 
+	        }
+ 
+	    } 
+	setInterval("changeColor()",200);
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="text1">( •̀ ω •́ )y  404 NOT FOUND</div>
+        <div class="text2">宁的电脑没什么问题，只是宁的链接无效</div>
+        <div class="text2">如果宁确定链接无误，请联系站长</div>
+        <button onclick="detectBrowser()" class="button1">点击这里检查一下罢!</button>
+        <div class="text2">
+            <a href="#" onclick="javascript:history.back(-1);" class="a">点我返回上一页</a>
+        </div>
+        <div class="text2">如有问题，请联系Siwg管理</div>
+    </div>
+</body>
+</html>
+<!-- -->
